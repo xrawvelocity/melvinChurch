@@ -1,0 +1,29 @@
+.about {
+  min-height: 63vh;
+
+  // padding: 0 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 22rem;
+
+  @include respond(phone){
+    min-height: 70vh;
+  }
+
+  &-video {
+      width: 55vw;
+      height: 60rem;
+      margin: 0 auto;
+
+      @include respond (tab-port) {
+        width: 90vw;
+        height: 40vh;
+      }
+
+      @include respond (phone) {
+        width: 90vw;
+        height: 25vh;
+      }
+  }
+}
